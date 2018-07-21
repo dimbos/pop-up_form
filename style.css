@@ -1,0 +1,123 @@
+body{
+    margin: 0;
+    padding: 0;
+    font-family: Arial, Helvetica, sans-serif;
+    background-image: url('img/city.jpg');
+    height: 100vh;
+}
+/*
+.wrapper{
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+}
+*/
+.container{
+    width: 350px;
+    overflow: hidden;
+    position: fixed;
+    bottom: 0;
+    right: 10%;
+    transform: translateY(530px);
+    transition: .5s;
+}
+
+.container:hover{
+    transform: translateY(520px);
+}
+
+.toggleForm:checked ~.container{
+    transform: translateY(0);
+}
+
+.formBox{
+    padding: 30px;
+    border: 4px solid #8a36a5;
+    background-color: #fff;
+}
+
+.toggleForm{
+    background: #8a36a5;
+    color: #fff;
+    text-align: center;
+    margin: 0 auto;
+    font-size: 24px;
+    border-radius: 8px 8px 0 0;
+    width: 85%;
+    cursor:pointer;
+    display: block;
+}
+
+.toggleForm i{
+    position: absolute;
+    left: 15%;
+    top: .5%;
+}
+
+.inputBox{
+    position: relative;
+    margin: 0 0 20px;
+}
+
+.labelText{
+    position: absolute;
+    font-size: 18px;
+    line-height: 55px;
+    color: #a5a5a5;
+    transition: .5s;
+}
+
+.userInput{
+    position: relative;
+    background: transparent;
+    width: 100%;
+    height: 50px;
+    font-size: 20px;
+    color: #575454; 
+    outline: none;
+    border: none;
+    border-bottom: 1px solid #a5a5a5;
+}
+
+.focus .labelText{
+    transform: translateY(-30px);
+    font-size: 14px;
+    color: #d33ebc;
+}
+
+textarea.userInput{
+    height: 100px;
+    margin-top: 15px;
+}
+
+.personalDoc,
+personalDoc a{
+    color: #858585;
+}
+
+.personalDoc a:hover{
+    text-decoration: none;
+    color: #b33edc;
+}
+
+.button{
+    background: #8a36a5;
+    color: #fff;
+    width: 45%;
+    height: 35px;
+    font-size: 18px;
+    border: none;
+    margin-top: 10px;
+    margin-left: 50%;
+    cursor: pointer;
+    transition: .5s;
+}
+
+.button:hover{
+    background: #b33adc;
+}
+
+#check_form{
+    display: none;
+}

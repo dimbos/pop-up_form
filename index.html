@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.1.1/css/all.css" integrity="sha384-O8whS3fhG2OnA5Kas0Y9l3cfpmYjapjI0E4theH4iuMD+pLhbf6JI0jIMfYcK3yZ" crossorigin="anonymous">
+    <link rel="stylesheet" href="style.css">
+    <title>Form</title>
+</head>
+<body>
+
+    <div class="wrapper">
+     <input type="checkbox" name="toggle" id="check_form" class="toggleForm">
+        <div class="container">
+            <label for="check_form" class="toggleForm"><i class="far fa-question-circle"></i> Задать вопрос</label>
+                <form action="" class="formBox">
+                    <div class="inputBox">
+                        <label class="labelText">Ваше имя: </label>
+                        <input required type="text" class="userInput">
+                    </div>
+
+                    <div class="inputBox">
+                            <label class="labelText">E-mail: </label>
+                            <input type="email" class="userInput" required>
+                        </div>
+
+                        
+                    <div class="inputBox">
+                            <label class="labelText">Номер телефона: </label>
+                            <input type="phone"  class="userInput" required pattern="\d+">
+                    </div>
+
+                            
+                    <div class="inputBox">
+                        <label class="labelText">Сообщение: </label>
+                        <textarea class="userInput" required></textarea>
+                    </div>
+
+                    <div class="inputBox">
+                        <input type="checkbox" required>
+                        <label class="personalDoc" > Я согласен на обработку моих <a href="#">персональных данных</a></label>                    
+                    </div>
+                <input type="submit" class="button" value="Отправить">
+
+            </form>
+        </div>
+
+
+    </div>
+
+    <script src="script.js"></script>
+    
+</body>
+</html>
